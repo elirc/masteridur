@@ -65,6 +65,15 @@ Running record of what was inspected while writing this curriculum, kept as work
 4. **Invoice summary ignores its date range** — `invoiceController/summary.js:27-29` computes `startDate`/`endDate` but the `$match` at `:33-42` has the date filter commented out, so `type=week|month|year` doesn't scope the total. Confirmed by reading the whole file.
 5. **`loggedSessions` unbounded growth** — `authUser.js:23-29` `$push` with no prune; `AdminPassword.js:30-33`.
 
+## 2026-10-06 — accuracy pass against the committed snapshot
+
+Re-checked statically against `elirc/masteridur` (commit `015121b`); nothing was installed or run. The environment line at the top is stale: the tree is now committed in its own repository.
+
+- All 146 relative Markdown links under `fable docs/` and `docs2/` resolve.
+- Every backticked `path:line` citation in both trees names a tracked file and falls within that file's length. Phantom paths that remain (`backend/.env`, `backend/.env.example`, `backend/jest.config.js`, `backend/test/setup.js`, `.github/workflows/ci.yml`, the `PaymentMode`/`Taxes` models) are files the text explicitly says are missing or asks you to create.
+- Spot-read and still accurate: `setup.js:54-67` (requires the missing models), `routes.jsx` (14 lazy imports at :5-26; `<Quote />`, `<PaymentMode />`, `<Taxes />` rendered at :73-116), `invoiceController/summary.js:33-42` (date filter commented out), `downloadPdf.js:9-11` (no `removed` filter), `sendMail.js:5-11` (premium stub), `server.js:7-11` (Node 20 guard), file counts (116 under `backend/src`, 258 under `frontend/src`, 42 translated READMEs under `features/`).
+- The README's "50+ question cards" was corrected to the counted 40 cards plus the debugging rounds and review katas.
+
 ## Uncertainties / not fully verified (labeled in-text as *investigate*)
 
 - Exact runtime status codes were traced through code, not observed against a running server.

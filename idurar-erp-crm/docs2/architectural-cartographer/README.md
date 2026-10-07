@@ -18,3 +18,5 @@ Important reading rule:
 
 Every factual claim in this suite points to a concrete source file and line range. When a pattern does not exist, the docs say so directly and explain the effect of the gap.
 
+Code blocks are condensed and annotated, not verbatim. The `// path:lines` header names the real range, but the code is reformatted, end-of-line comments were added for teaching, and some lines inside the range are left out (for example, the `actions.js:36-68` block in `02-mid-level-engineer.md` writes `REQUEST_LOADING` where the source has `actionTypes.REQUEST_LOADING`). Open the cited range before quoting it in a review or interview. (Note added 2026-10-06.)
+

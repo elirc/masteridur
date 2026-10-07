@@ -19,7 +19,7 @@ IDURAR is an open-source ERP/CRM: a single-tenant invoicing app where an admin l
 | Quality | [05-quality-engineering](05-quality-engineering/README.md) | Testing strategy, debugging method, performance, security, ops |
 | Contribution | [06-contribution-practice](06-contribution-practice/README.md) | 16 junior tickets, 10 mid tickets, 6 senior projects, katas |
 | Career | [07-career-and-collaboration](07-career-and-collaboration/README.md) | Review mindset, PR/RFC writing, maintainer communication |
-| **Interview prep** | [08-interview-prep](08-interview-prep/README.md) | 50+ question cards anchored to this repo, system design, STAR stories, cram plan |
+| **Interview prep** | [08-interview-prep](08-interview-prep/README.md) | 40 question cards anchored to this repo, 4 debugging rounds + 4 review katas, system design, STAR stories, cram plan |
 | Reference | [09-reference](09-reference/) | Commands, risk register, rubrics, verification log |
 
 ## Recommended paths
@@ -32,6 +32,16 @@ IDURAR is an open-source ERP/CRM: a single-tenant invoicing app where an admin l
 - **Mid-level, new to the repo:** 01/01 + 01/05, then straight to 03/06-architecture-critique and 06/03-senior-build-projects.
 - **Senior doing architecture review:** 03/06-architecture-critique.md and 09-reference/risk-register.md, verify against code.
 - **Interview in two weeks:** go directly to [08-interview-prep/07-two-week-cram-plan.md](08-interview-prep/07-two-week-cram-plan.md). It schedules everything else you need.
+
+## Other guides in this repo
+
+Two other AI-written suites sit in `docs2/`. They cover the same codebase from different angles and do not link to this curriculum, so expect overlap:
+
+- `docs2/architectural-cartographer/` — a top-down map in five parts (reading map, junior, mid-level, senior, reference). Overlaps most with `01-codebase-cartography` and `03-architecture-and-patterns`.
+- `docs2/mission-learning-path/` — 25 Socratic missions (8 junior, 9 mid-level, 7 senior, plus a capstone docs mission) with rubrics. A good second pass after `04-code-reading-gym`.
+- `docs2/user-story-build-path/01-stories.md` (10 stories) and `docs2/20-junior-user-stories-implementation-plans.md` (20 stories with step plans). These overlap with `06-contribution-practice`; for example, docs2 Story 11 ("Fix Backend Setup Missing PaymentMode And Taxes Models") is the same defect as item 1 in `00-fast-track.md`.
+
+Use this curriculum as the spine and pull a docs2 mission or story in when you want another rep on the same file.
 
 ## Conventions used everywhere
 
